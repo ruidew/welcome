@@ -53,6 +53,7 @@ section {
   border-radius: 8px;
   max-width: 600px;
   margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 label {
@@ -95,6 +96,29 @@ button:hover {
 /* reCAPTCHA Styles */
 .g-recaptcha {
   margin: 10px 0;
+}
+
+/* Additional Styling to keep the 'spicy' look */
+h1, h2, h3, p {
+  font-family: 'Roboto', sans-serif;
+}
+
+#projects .project {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#projects .project img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: #222;
+  color: #bbb;
+  padding: 20px 0;
 }
 
 /* Mobile Responsive */
