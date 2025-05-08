@@ -3,337 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Bakery</title>
+    <title>Declan's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        /* General Styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f3e7;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Navbar */
-        .navbar {
-            position: sticky;
-            top: 0;
-            background-color: #6f4f31;
-            color: #fff;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            z-index: 1000;
-        }
-
-        .navbar .logo {
-            font-size: 2.5em;
-            font-weight: 700;
-        }
-
-        .navbar .nav-links {
-            list-style: none;
-            display: flex;
-            margin: 0;
-        }
-
-        .navbar .nav-links li {
-            margin: 0 20px;
-        }
-
-        .navbar .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: 300;
-            transition: color 0.3s ease;
-        }
-
-        .navbar .nav-links a:hover {
-            color: #ff7043;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            background: url('bakery-hero.jpg') no-repeat center center/cover;
-            color: #fff;
-            text-align: center;
-            padding: 100px 20px;
-            background-size: cover;
-        }
-
-        .hero-section h1 {
-            font-size: 4em;
-            font-weight: bold;
-        }
-
-        .hero-section p {
-            font-size: 1.8em;
-            margin: 20px 0;
-        }
-
-        .cta-button {
-            background-color: #ff7043;
-            color: #fff;
-            padding: 15px 40px;
-            font-size: 1.4em;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background-color: #f4511e;
-        }
-
-        /* Menu Section */
-        .menu-section {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #fff;
-        }
-
-        .menu-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            color: #6f4f31;
-        }
-
-        .menu-items {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .menu-item {
-            background-color: #fffbf4;
-            width: 30%;
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .menu-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .menu-item h3 {
-            margin-top: 20px;
-            font-size: 1.8em;
-            color: #6f4f31;
-        }
-
-        .menu-item p {
-            font-size: 1.2em;
-            color: #777;
-        }
-
-        .menu-item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        /* About Us Section */
-        .about-section {
-            padding: 60px 20px;
-            background-color: #f3e5f5;
-            text-align: center;
-        }
-
-        .about-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #6f4f31;
-        }
-
-        .about-section p {
-            font-size: 1.2em;
-            width: 70%;
-            margin: 0 auto;
-            color: #555;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            padding: 60px 20px;
-            background-color: #fff;
-            text-align: center;
-        }
-
-        .contact-section form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .contact-section input,
-        .contact-section textarea {
-            width: 50%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-            font-size: 1.1em;
-        }
-
-        .contact-section button {
-            padding: 10px 20px;
-            background-color: #ff7043;
-            color: #fff;
-            font-size: 1.2em;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact-section button:hover {
-            background-color: #f4511e;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #6f4f31;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .footer-links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer-links li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1em;
-        }
-
-        /* Before & After Section */
-        .before-after-section {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #f9f3e7;
-        }
-
-        .before-after-section h2 {
-            font-size: 2.5em;
-            color: #6f4f31;
-        }
-
-        .before-after-images {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .before-image, .after-image {
-            width: 45%;
-        }
-
-        .before-image img, .after-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS file -->
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">Delicious Bakery</div>
+        <div class="logo">Declan's Portfolio</div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <h1>Welcome to Delicious Bakery</h1>
-        <p>Where every bite feels like home.</p>
-        <a href="#menu" class="cta-button">Explore Our Menu</a>
+    <section class="hero-section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Here’s a collection of my work and personal projects. Let’s create something amazing together!</p>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu-section">
-        <h2>Our Specialties</h2>
-        <div class="menu-items">
-            <div class="menu-item">
-                <img src="croissant.jpg" alt="Croissant">
-                <h3>Buttery Croissants</h3>
-                <p>Flaky, golden, and freshly baked to perfection. Start your day with a warm croissant!</p>
-            </div>
-            <div class="menu-item">
-                <img src="cookies.jpg" alt="Cookies">
-                <h3>Chocolate Chip Cookies</h3>
-                <p>Our signature cookies, with rich chocolate chips and a soft, chewy center.</p>
-            </div>
-            <div class="menu-item">
-                <img src="cakes.jpg" alt="Cakes">
-                <h3>Celebration Cakes</h3>
-                <p>Whether it's a birthday or special event, our cakes will make the moment unforgettable.</p>
-            </div>
+    <!-- About Me Section -->
+    <section id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <p>Hello! I’m Declan, a web developer passionate about creating beautiful and functional websites. I love working on design, development, and bringing ideas to life through code. With each project, I aim to improve my skills and provide valuable experiences to users.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <img src="bakery-before-after.jpg" alt="Bakery Website">
+            <h3>Delicious Bakery Website</h3>
+            <p>This project involved redesigning a local bakery’s website, improving its user experience, aesthetics, and functionality. I worked on the layout, color scheme, and responsiveness.</p>
+            <p>Technologies: HTML, CSS, JavaScript</p>
         </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="about-section">
-        <h2>About Us</h2>
-        <p>At Delicious Bakery, we are a family-owned bakery passionate about providing fresh, high-quality baked goods. Every item we make is crafted with care using only the best ingredients. Whether you’re looking for a daily treat or something for a special occasion, we’re here to make your day sweeter!</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Get in Touch</h2>
-        <form action="submit_form.php" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Before & After Section -->
-    <section id="before-after" class="before-after-section">
-        <h2>Before & After: Bakery Website Redesign</h2>
-        <p>Here is the transformation of a local bakery's website, where we took it from bland to brilliant!</p>
-        <div class="before-after-images">
-            <div class="before-image">
-                <h3>Before</h3>
-                <img src="images/before-screenshot.jpg" alt="Before Screenshot">
-            </div>
-            <div class="after-image">
-                <h3>After</h3>
-                <img src="images/after-screenshot.jpg" alt="After Screenshot">
-            </div>
-        </div>
+        <!-- Add More Projects Here -->
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Delicious Bakery | All rights reserved</p>
+        <p>&copy; 2025 Declan | All rights reserved</p>
         <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Email</a></li>
         </ul>
     </footer>
 
+    <script src="script.js"></script>  <!-- Link to external JavaScript file -->
 </body>
 </html>
