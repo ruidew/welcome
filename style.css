@@ -1,145 +1,75 @@
-/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-/* Navbar */
-.navbar {
-    position: sticky;
-    top: 0;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+header {
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.navbar .logo {
-    font-size: 2.5em;
-    font-weight: 700;
+header h1 {
+  font-size: 2.5rem;
+  color: #0d6efd;
 }
 
-.navbar .nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
+header p {
+  font-size: 1.2rem;
+  color: #555;
 }
 
-.navbar .nav-links li {
-    margin: 0 20px;
+.offer {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
 }
 
-.navbar .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    font-weight: 300;
-    transition: color 0.3s ease;
+.offer h2 {
+  color: #0d6efd;
+  margin-bottom: 10px;
 }
 
-.navbar .nav-links a:hover {
-    color: #ff7043;
+.offer ul {
+  list-style: inside square;
+  padding-left: 10px;
 }
 
-/* Hero Section */
-.hero-section {
-    background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 20px;
+.cta {
+  text-align: center;
+  padding: 20px;
+  background: #e3f2fd;
+  border-radius: 8px;
 }
 
-.hero-section h1 {
-    font-size: 4em;
-    font-weight: bold;
+.cta button {
+  padding: 10px 20px;
+  background: #0d6efd;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
-.hero-section p {
-    font-size: 1.8em;
-    margin: 20px 0;
+.cta button:hover {
+  background: #0b5ed7;
 }
 
-/* About Me Section */
-.about-me {
-    background-color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.about-me h2 {
-    font-size: 2.5em;
-    color: #333;
-}
-
-.about-me p {
-    font-size: 1.2em;
-    color: #555;
-    width: 70%;
-    margin: 0 auto;
-}
-
-/* Project Section */
-.projects-section {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.projects-section h2 {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-.project-card {
-    background-color: #fff;
-    margin: 20px;
-    padding: 30px;
-    width: 30%;
-    display: inline-block;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    text-align: center;
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.project-card h3 {
-    margin-top: 20px;
-    font-size: 1.8em;
-}
-
-.project-card p {
-    color: #777;
-}
-
-/* Footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    display: inline;
-    margin: 0 10px;
-}
-
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
 }
