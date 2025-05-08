@@ -1,58 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Declan's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS file -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Dev Tasks - $10 Fixes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header>
+    <h1>🧠 Mini Dev Tasks</h1>
+    <p>“I’ll fix any small website problem for $10.”</p>
+  </header>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Declan's Portfolio</div>
-        <ul class="nav-links">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Here’s a collection of my work and personal projects. Let’s create something amazing together!</p>
+  <main>
+    <section class="offer">
+      <h2>What I Fix</h2>
+      <ul>
+        <li>Broken layouts</li>
+        <li>Bad mobile responsiveness</li>
+        <li>Old or clunky design issues</li>
+        <li>Small HTML/CSS/JS bugs</li>
+      </ul>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about-me" class="about-me">
-        <h2>About Me</h2>
-        <p>Hello! I’m Declan, a web developer passionate about creating beautiful and functional websites. I love working on design, development, and bringing ideas to life through code. With each project, I aim to improve my skills and provide valuable experiences to users.</p>
+    <section class="cta">
+      <h2>Need a Quick Fix?</h2>
+      <p>Email me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <button onclick="showMessage()">Let’s Talk</button>
+      <p id="message" style="display:none;">I’ll get back to you within 24 hours!</p>
     </section>
+  </main>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <img src="bakery-before-after.jpg" alt="Bakery Website">
-            <h3>Delicious Bakery Website</h3>
-            <p>This project involved redesigning a local bakery’s website, improving its user experience, aesthetics, and functionality. I worked on the layout, color scheme, and responsiveness.</p>
-            <p>Technologies: HTML, CSS, JavaScript</p>
-        </div>
-        <!-- Add More Projects Here -->
-    </section>
+  <footer>
+    <p>© 2025 Mini Dev Tasks. Built with love and caffeine.</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Declan | All rights reserved</p>
-        <ul class="footer-links">
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Email</a></li>
-        </ul>
-    </footer>
-
-    <script src="script.js"></script>  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
